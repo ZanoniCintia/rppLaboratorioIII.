@@ -197,12 +197,12 @@ function PostModificar(ev){
             break;
         }
     }
-   
+    ById("preview-area").hidden=false;
     peticionHTTP.onreadystatechange= function(){
         if(peticionHTTP.readyState== 4 && peticionHTTP.status== 200 )
         {    
             console.log(JSON.parse(peticionHTTP.responseText));
-         
+            ById("preview-area").hidden=true;
         }
      }
      var auto = {"id":id,"year":anio};
