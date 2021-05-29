@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js"></script>  
+    <title>Zanoni</title>
+</head>
+<body id = "body"> 
+    <div id="preview-area" hidden>
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
+
+    <div class="relative" >
+        <div id="divForm" class="contenedor" hidden>
+            Alta de un auto
+            <input type="button" id="btnCancelar" class="rojo" value="x">
+            <br>
+            <label for="impMarca">Marca</label><br>        
+            <input type="text"  id="impMarca" value="">
+            <br>
+            <label for="impModelo">Modelo</label><br>        
+            <input type="text"  id="impModelo" value="">
+            <br>
+            <label for="anio">Año</label><br> 
+            <select id="anio" name="year"><option value="0">2000</option><option value="1">2001</option><option value="2">2002</option><option value="3">2003</option><option value="4">2004</option><option value="5">2005</option><option value="6">2006</option><option value="7">2007</option><option value="8">2008</option><option value="9">2009</option><option value="10">2010</option><option value="11">2011</option><option value="12">2012</option><option value="13">2013</option><option value="14">2014</option><option value="15">2015</option><option value="16">2016</option><option value="17">2017</option><option value="18">2018</option><option value="19">2019</option><option value="20">2020</option></select>
+            <br>
+            <br> 
+            <input type="button" id="btnCrear" class="boton" value="Guardar">  
+                                          
+        </div>
+              
+    </div>  
+    <input class="boton" type="button" value="Agregar" id="btnAlta"> 
+
+    <div id = "divTabla"></div> 
+    
+</body>
+</html>
