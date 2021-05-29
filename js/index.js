@@ -249,7 +249,7 @@ function validarCampos(obj){
         return false;
     }else{
         obj.className="sinError";
-        
+        return true;
     }
     
      
